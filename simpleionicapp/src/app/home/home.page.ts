@@ -6,15 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
-  constructor() {}
+   
+  constructor() {}  
     myVariable: string ="The force is with me!";
     myVariable2: string ="Hello from CCT";
-    
+    myVariable3: string ="Third message added";
+
+    // manage button. clickevent
     updateMyValue(){
       this.myVariable = "Now the force is even stronger!!";
     }
     updateMyValue2(){
       this.myVariable2 = "Hello from Ionic Mobile Development";
+    }
+    updateMyValue3(){
+      this.myVariable3 = "Hello from three";
+      console.log("hello from third bottun")
     }
 }
